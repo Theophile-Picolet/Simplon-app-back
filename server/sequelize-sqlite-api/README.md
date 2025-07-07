@@ -1,54 +1,53 @@
-# Sequelize & SQLite API
+# API Sequelize & SQLite
 
-This project is a simple API built using Express, Sequelize, and SQLite. It demonstrates how to set up a RESTful API with basic CRUD operations.
+Ce projet est une API simple construite avec Express, Sequelize et SQLite. Il montre comment mettre en place une API RESTful avec des opérations CRUD de base.
 
-## Project Structure
+## Structure du projet
 
 ```
 sequelize-sqlite-api
 ├── src
-│   ├── app.js               # Entry point of the application
+│   ├── app.js               # Point d'entrée de l'application
 │   ├── models
-│   │   └── index.js         # Sequelize models and database connection
+│   │   └── index.js         # Modèles Sequelize et connexion à la base de données
 │   ├── routes
-│   │   └── api.js           # API routes
+│   │   └── api.js           # Routes de l'API
 │   └── controllers
-│       └── apiController.js  # Business logic for API routes
-├── package.json              # npm configuration file
-├── .sequelizerc             # Sequelize CLI configuration
-└── README.md                 # Project documentation
+│       └── apiController.js # Logique métier des routes de l'API
+├── package.json             # Fichier de configuration npm
+├── .sequelizerc             # Configuration de la CLI Sequelize
+└── README.md                # Documentation du projet
 ```
 
 ## Installation
 
-1. Clone the repository:
+1. Clonez le dépôt :
    ```
-   git clone https://github.com/yourusername/sequelize-sqlite-api.git
+   git clone https://github.com/Theophile-Picolet/Simplon-app-back.git
    cd sequelize-sqlite-api
    ```
 
-2. Install the dependencies:
+2. Installez les dépendances :
    ```
    npm install
    ```
 
-## Usage
+## Utilisation
 
-1. Start the application:
+1. Démarrez l'application :
    ```
    npm start
    ```
 
-2. The API will be running on `https://simplon-app-back.onrender.com/api/blagues`.
+2. L'API sera accessible sur `https://simplon-app-back.onrender.com/api/blagues`.
 
-## API Endpoints
+## Points de terminaison de l'API
 
-- `GET /api/blagues` - Retrieve all items
-- `GET /api/blagues/:id` - Retrieve a specific item by ID
-- `POST /api/blagues` - Create a new item
-- `GET /api/random-blague` - Retrieve an random blague
+- `GET /api/blagues` - Récupérer toutes les blagues
+- `GET /api/blagues/:id` - Récupérer une blague spécifique par ID
+- `POST /api/blagues` - Créer une nouvelle blague
+- `GET /api/random-blague` - Récupérer une blague aléatoire
 
+## Licence
 
-## License
-
-This project is licensed under the MIT License.
+Ce projet est sous licence MIT.
