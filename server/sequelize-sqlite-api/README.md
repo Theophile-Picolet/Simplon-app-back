@@ -39,15 +39,15 @@ sequelize-sqlite-api
    npm start
    ```
 
-2. The API will be running on `http://localhost:3000`.
+2. The API will be running on `https://simplon-app-back.onrender.com/api/blagues`.
 
 ## API Endpoints
 
-- `GET /api/items` - Retrieve all items
-- `GET /api/items/:id` - Retrieve a specific item by ID
-- `POST /api/items` - Create a new item
-- `PUT /api/items/:id` - Update an existing item by ID
-- `DELETE /api/items/:id` - Delete an item by ID
+- `GET /api/blagues` - Retrieve all items
+- `GET /api/blagues/:id` - Retrieve a specific item by ID
+- `POST /api/blagues` - Create a new item
+- `GET /api/random-blague` - Retrieve an random blague
+
 
 ## License
 
