@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 const { sequelize } = require("./models");
 const debug = require("debug")("app");
 
@@ -7,6 +8,11 @@ const app = express();
 const PORT = 3000;
 
 // Middleware
+app.use(
+  cors({
+    origin: "https://theophile-picolet.github.io",
+  }),
+);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
