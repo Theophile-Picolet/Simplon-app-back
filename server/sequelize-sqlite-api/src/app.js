@@ -10,7 +10,7 @@ const PORT = 3000;
 // Middleware
 app.use(
   cors({
-    origin: "https://theophile-picolet.github.io",
+    origin: ["https://theophile-picolet.github.io", "http://localhost:3000"],
   }),
 );
 app.use(bodyParser.json());
